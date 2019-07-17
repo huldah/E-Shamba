@@ -1,0 +1,221 @@
+<html>
+  <head>
+  <style>
+    #myform {
+    width: 450px;
+	margin:0 auto;
+    clear: both;
+   }
+
+   
+   .myform input {
+   width: 100%;
+   padding: 5px;
+   margin:0 auto;
+   clear: both;
+  }
+  
+  select {
+    width: 50%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+  
+  .form-signup
+  {
+  border: 2px solid #141452;
+  background-color: rgba(255, 255, 255, 0.2);
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 3px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:300px;
+   padding:5px;
+   width:300px;
+  
+   }
+  
+  
+  .form-control{
+  border: 0px solid #ffffff;
+   background-color: rgba(255, 255, 255, 0.4);
+   -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   border-radius: 1px;
+   color: #000000;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 1px 1px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 1px 1px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 1px 1px;
+   padding:8px;
+   margin-bottom:20px;
+   width:100%;
+  
+  }
+ .signupbtn{
+  border: 0px solid #ffffff;
+   background: #141452;
+    -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   border-radius: 1px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    color: #ffffff;
+   font-family:Arial;
+   padding: 8.5px 18px;
+   font-size: 19px;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center;
+   margin-bottom:20px;
+   height:50px;
+   width:100%
+  
+  }
+  body { 
+    background-image: url('background1.jpg	');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    
+}
+  .heading1{
+   font-family: Arial;
+   font-size: 35px;
+   font-style: normal;
+   font-weight: normal;
+}
+h2{
+ font-family: Arial;
+ font-size: 16px;
+}
+.form-signup-heading{
+ text-align:center;
+  font-family: Arial;
+   font-size: 35px;
+   font-style: normal;
+   font-weight: bold;
+   color: #141452;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: 3D4E52;
+    color: white;
+    text-align: center;
+}
+ p{
+font-family: Arial;
+font-size:15px;
+}
+.header {
+  overflow: hidden;
+  background-image: url('headerback1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px 1px;
+}
+  </style>
+     <title>E-SHAMBA Register.</title>
+  </head>
+
+  <body>
+  
+    <div class="header">
+      <img src="logo1.png" alt="E-SHAMBA Logo." height="150" width="170">
+  
+    </div>
+
+<h3> &nbsp </h3>
+  <div id="all">
+       <!--
+           <div id='errors'>
+                
+      </div>
+      -->
+
+     <form class="form-signup" id="myform">
+        <h2 class="form-signup-heading">Sign Up.</h2>
+        <input type="text" name="surname" id="SurName" class="form-control" placeholder="Surname." required><br>
+		<input type="text" name="othername" id="OtherName" class="form-control" placeholder="Other name" required><br>
+		<input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required><br>
+		<input type="tel" name="mobile" id="mobile" class="form-control" placeholder="Phone-no" required><br>
+		<label><p1 font-size= "15px">&nbsp&nbsp Location</p1></label><select name="location" form="countyform">
+		   <option hidden value=" guideline ">Please select your County.</option>
+           <option value=" baringo ">Baringo</option>
+           <option value=" bomet"> Bomet</option>
+           <option value=" bungoma "> Bungoma </option>
+           <option value=" busia "> Busia </option>
+           <option value=" elgeyoMarakwet "> Elgeyo Marakwet </option>
+           <option value=" embu "> Embu </option>
+           <option value=" garissa "> Garissa </option>
+           <option value=" homaBay "> Homa Bay </option>
+           <option value=" Isiolo "> Isiolo </option>
+           <option value=" kajiado "> Kajiado </option>
+           <option value=" kakamega "> Kakamega </option>
+           <option value=" kiambu "> Kiambu </option>
+           <option value=" kilifi "> Kilifi </option>
+           <option value=" kirinyaga "> Kirinyaga </option>
+           <option value=" kisii "> Kisii </option>
+           <option value=" kisumu "> Kisumu </option>
+           <option value=" kitui "> Kitui </option>
+           <option value=" kwale "> Kwale </option>
+           <option value=" laikipia "> Laikipia </option>
+           <option value=" lamu "> Lamu </option>
+           <option value=" machakos "> Machakos </option>
+           <option value=" makueni "> Makueni </option>
+           <option value=" mandera "> Mandera </option>
+           <option value=" marsabit "> Marsabit </option>
+           <option value=" meru "> Meru </option>
+           <option value=" migori "> Migori </option>
+           <option value=" mombasa "> Mombasa </option>
+           <option value=" muranga "> Murang'a </option>
+           <option value=" nairobi "> Nairobi </option>
+           <option value=" nakuru "> Nakuru </option>
+           <option value=" nandi "> Nandi </option>
+           <option value=" narok "> Narok </option>
+           <option value=" nyamira "> Nyamira </option>
+           <option value=" nyandarua "> Nyandarua </option>
+           <option value=" nyeri "> Nyeri </option>
+           <option value=" samburu "> Samburu </option>
+           <option value=" siaya "> Siaya </option>
+           <option value=" taitaTaveta "> Taita Taveta </option>
+           <option value=" tanaRiver "> Tana River </option>
+           <option value=" tharakaNithi "> Tharaka Nithi </option>
+           <option value=" transNzoia "> Trans Nzoia </option>
+           <option value=" turkana "> Turkana </option>
+           <option value=" uasinGishu "> Uasin Gishu </option>
+           <option value=" vihiga  "> Vihiga </option>
+           <option value=" wajir  "> Wajir </option>
+           <option value=" baringo ">Baringo</option>
+           <option value=" westPokot "> West Pokot </option>
+        </select><br><br>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
+		<input type="password" id="password2" class="form-control" placeholder="Repeat Password" required><br>
+
+        <div class="checkbox" id="checkbx">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div><br>
+		
+                 <button type="submit" class="signupbtn">REGISTER</button>
+				
+       
+	  </form>
+    </div>
+	<div class="footer">
+        <p>©Copyright 2018 eshamba . <u>All Rights Reserved</u></p>
+    </div>
+  </body>
+</html>
+
+ 

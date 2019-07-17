@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-image: url('headerback1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px 1px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 1px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header-right {
+  float: right;
+}
+
+.avatar{
+   border-radius: 50%;
+
+}
+
+.header{
+    float:left;
+   width: 100%;
+   padding: 10px 10px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left:200px;
+    padding-right: 40px;
+    overflow: hidden;
+    background-color:  #000066;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ffffff;
+	color: #000066;
+}
+
+li.account {
+    float:right;
+	font-size: 13px;
+    
+}
+
+
+
+
+
+  #myform {
+    width: 450px;
+	margin:0 auto;
+    clear: both;
+   }
+
+   
+   .myform input {
+   width: 100%;
+   padding: 5px;
+   margin:0 auto;
+   clear: both;
+  }
+  
+  select {
+    width: 50%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+  
+  .form-login
+  {
+  border: 2px solid #141452;
+  background-color: rgba(255, 255, 255, 0.2);
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 3px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:300px;
+   padding:5px;
+   width:300px;
+  
+   }
+  
+  
+  .form-control{
+  border: 0px solid #ffffff;
+   background-color: rgba(255, 255, 255, 0.4);
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 15px;
+   border-radius: 1px;
+   color: #000000;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 1px 1px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 1px 1px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 1px 1px;
+   padding:8px;
+   margin-bottom:20px;
+   width:100%;
+  
+  }
+ .loginbtn{
+  border: 0px solid #ffffff;
+   background: #141452 ;
+    -webkit-border-radius: 1px;
+   -moz-border-radius: 30px;
+   border-radius: 1px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    color: #ffffff;
+   font-family:Arial;
+   padding: 8.5px 18px;
+   font-size: 19px;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center;
+   margin-bottom:20px;
+   height:50px;
+   width:100%
+  
+  }
+  body { 
+    background-image: url('background1.jpg	');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    
+}
+  .heading1{
+   font-family: Arial;
+   font-size: 35px;
+   font-style: normal;
+   font-weight: normal;
+}
+h3{
+ font-family: Arial;
+ font-size: 16px;
+}
+.form-login-heading{
+ text-align:center;
+  font-family: Arial;
+   font-size: 35px;
+   font-style: normal;
+   font-weight: bold;
+   color:#141452;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	height: 20%;
+    background-color: 3D4E52;
+    color: white;
+	font-family: Arial;
+    
+}
+
+.addressFooter{
+    text-align:center;
+	column-count:2;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo1.png" alt="E-SHAMBA Logo." height="150" width="170">
+  
+    <form method="post" action="processing/login.php" style="font-size: 18px"></form>
+    
+</div>
+<br>
+<h3> &nbsp </h3>
+
+        <div id="all">
+                <form class="form-login" id="myform" action="processing/login.php" method="post">
+        <h2 class="form-login-heading">Log In.</h2>
+          
+        <input type="text" name="username" class="formcontrol" placeholder="Username" required="" style="font:-size 18px" />
+        <br>
+                    <br>
+                    
+       <!-- <input type="email" id="inputEmail" class="form-control" placeholder="Username" required><br> -->
+                    
+                    
+		<input type="password" name="password" class="form-control" placeholder="Password" required><br>
+                    
+           <!--          
+        <div class="checkbox" id="checkbx">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div><br>
+            -->
+                    <input type="submit" class="form-control btn-round btn-success" value="Log in" style="font-size:14px;padding: 12px 12px 12px;"/>
+                    
+		  <!-- <button type="submit" class="loginbtn">LOG IN</button>  -->
+				
+       
+            </form>
+        </div>
+
+
+</body>
+</html>
